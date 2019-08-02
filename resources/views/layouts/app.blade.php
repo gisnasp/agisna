@@ -37,10 +37,16 @@
                     @guest
                     @else
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menu 1</a>
+                        <a class="nav-link" href="#">Menu (diwajibkan AUTH ROLE SUPER ADMIN)</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menu 2</a>
+                        <a class="nav-link" href="#">Menu (diwajibkan AUTH ROLE ADMIN)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu (diwajibkan AUTH ROLE USER)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu (diwajibkan AUTH GLOBAL ROLE)</a>
                     </li>
                     @endguest
                     </ul>
