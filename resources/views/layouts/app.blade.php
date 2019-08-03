@@ -34,8 +34,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                   
                     @guest
                     @else
+                    @role('admin')
                     <li class="nav-item">
                         <a class="nav-link" href="#">Menu (diwajibkan AUTH ROLE SUPER ADMIN)</a>
                     </li>
@@ -48,7 +50,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Menu (diwajibkan AUTH GLOBAL ROLE)</a>
                     </li>
-                    @endguest
+                    @endrole
+                    @endguest 
+                    <!-- @auth
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu (diwajibkan AUTH ROLE SUPER ADMIN)</a>
+                    </li>
+                    @endauth -->
                     </ul>
 
                     <!-- Right Side Of Navbar -->
